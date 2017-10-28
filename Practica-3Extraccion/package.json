@@ -1,0 +1,16 @@
+{
+  "name": "practica3",
+  "version": "1.0.0",
+  "description": "Extraccion datos",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js",
+    "jalando":"node crawler.js"
+  },
+  "keywords": [
+    "cheerio",
+    "fs"
+  ],
+  "author": "meer",
+  "license": "ISC"
+}
