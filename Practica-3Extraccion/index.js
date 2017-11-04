@@ -7,7 +7,7 @@ var url = "http://www.imdb.com/movies-coming-soon/?ref_=inth_cs";
 request(url, function (error, response, html) {
     if (!error && response.statusCode == 200) {
         var $ = cheerio.load(html);
-        $('div:has(div.list detail)').each(function(i,element){
+        $('div:has(".list.detail")').each(function(i,element){
             var a = $(this).next();
             console.log(a.text());
         })
