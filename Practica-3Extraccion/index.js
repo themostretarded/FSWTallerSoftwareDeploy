@@ -7,10 +7,14 @@ var url = "http://www.imdb.com/movies-in-theaters/?ref_=nv_tp_inth_1";
 request(url, function (error, response, html) {
     if (!error && response.statusCode == 200) {
         var $ = cheerio.load(html);
-        $("#main > div > div:nth-child(4) > div:nth-child(2)").each(function(i,element){
-            var contenido = $(this).text().trim();
-            console.log(contenido+"\n");
-            var arreglo = [contenido];
+        $("#main > div > div > div.lister-list").each(function(i,element){
+            var i = 0;            
+            var contenido = $(this).text();
+            
+            if(i==1){
+                console.log("primera iteracion segun yo :\n ------------");
+                console.log(contenido);
+            }
         })
         /* escribir todo el documento html
         fs.appendFile('contenido.html', html, function (err) {
@@ -20,3 +24,4 @@ request(url, function (error, response, html) {
       console.log("ya se escribio");*/
     }
   });
+  
