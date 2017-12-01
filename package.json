@@ -1,0 +1,30 @@
+{
+  "name": "taller",
+  "version": "1.0.0",
+  "description": "Proyecto de abraham",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themostretarded/TallerSoftwareDeploy.git"
+  },
+  "keywords": [
+    "mongodb",
+    "github",
+    "heroku",
+    "scrapper",
+    "nodejs"
+  ],
+  "author": "meer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themostretarded/TallerSoftwareDeploy/issues"
+  },
+  "homepage": "https://github.com/themostretarded/TallerSoftwareDeploy#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
