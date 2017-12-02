@@ -1,2 +1,0 @@
-# TallerSoftwareDeploy
-Cruso de deployment
