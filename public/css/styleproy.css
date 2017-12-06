@@ -24,8 +24,9 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+    animation-fill-mode: forwards;
     animation-name: cambios;
-    animation-duration: 4s;
+    animation-duration: 1s;
 }
 
 a:active {
@@ -37,6 +38,6 @@ a:active {
         background-color: white; color:black;
     }
     to {
-        background-color: Snow  ;color:SeaGreen ;
+        background-color: #E0E0E0  ;color:White ;
     }
 }
