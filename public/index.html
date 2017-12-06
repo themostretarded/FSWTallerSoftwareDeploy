@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" type="text/css" href="./cssvideo.css">
+        <link rel="stylesheet" type="text/css" href="./css/cssvideo.css">
 </head>
 <body>
-    <div class="video-background">
-        <div class="video-foreground">
-                <iframe src="https://www.youtube.com/embed/9l5TrAXScbE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-        </div>
+    <!-- The video -->
+<video autoplay muted loop id="myVideo">
+        <source src="./vid/We Can Dance - Movie Dance Tribute Vol. 1.mp4" type="video/mp4">
+      </video>
+      
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="content">
+        <h1>Bienvenidos a la seleccion de mejores peliculas</h1>
+        <p>En nuestra pagina encontrara 6 genero por el momento donde podra buscar cada una de las</p>
+        <p>Peliculas con mejor "ranked" en IMDB</p>
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <button id="myBtn" onclick="myFunction()">Pausar el video</button>
+        
+        <a href="./menu.html" class="mybtn">Ir a listas</a>
       </div>
-    
-    <div id="vidtop-content">
-    <div class="vid-info">
-          <h1>Bienvenidos a que ver</h1>
-          <p>Con las listas de las mejores peliculas</p>
-         <a href="./menu.html">Ver listas</a>
-      </div>
-    </div>
+      <script src="./scripts/video.js"></script>
 </body>
 
 
