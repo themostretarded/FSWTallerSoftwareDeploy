@@ -6,9 +6,15 @@
  https://api.myjson.com/bins/i1gx3
 
  */
-
-const url = "https://api.myjson.com/bins/i1gx3"
+const url = "https://api.myjson.com/bins/q5nfr"
 
 $(() => {
-   
+    $.ajax({
+        url: "https://api.myjson.com/bins/q5nfr",
+        type: "GET",
+        success: function (result) {
+            console.log(result)
+        }
+      });
 });
+    
