@@ -16,7 +16,14 @@
 <body>
     <div class="container accion">
         <ul>
-
+            <table style="width:100%" id="tabla"  class="table table-striped">
+                <tr>
+                  <th>Imagen</th>
+                  <th>Titulo</th> 
+                  <th>Lanzamiento</th>
+                  <th>Descripcion</th>
+                </tr>
+              </table>
         </ul>
     </div>
 
@@ -38,7 +45,7 @@ $(() => {
         success: function (result) {
             console.log(result)
             result.map(peliculas =>{
-                //$(".accion").append("<div>")
+                $("#tabla").append("<tr>"+"<td><img src=\""+peliculas.image+"\"></td>"+"<td>"+peliculas.title+"</td><td>"+peliculas.description+"</td><td>"+peliculas.release+"</td></tr>");
                 console.log(peliculas.title)
                 console.log(peliculas.image)
                 console.log(peliculas.description)
