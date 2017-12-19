@@ -1,7 +1,6 @@
 //insertar a partir de json
 var fs = require('fs');
-var MongoClient = require('mongodb').MongoClient,
-    assert = require('assert');
+var MongoClient = require('mongodb').MongoClient,assert = require('assert');
 
 // Connection URL
 var url = 'mongodb://admin:admin@ds161146.mlab.com:61146/peliculass';
