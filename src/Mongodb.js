@@ -1,7 +1,7 @@
 //insertar a partir de json
 var fs = require('fs');
-var MongoClient = require('mongodb').MongoClient
-    , assert = require('assert');
+var MongoClient = require('mongodb').MongoClient,
+    assert = require('assert');
 
 // Connection URL
 var url = 'mongodb://admin:admin@ds161146.mlab.com:61146/peliculass';
@@ -18,7 +18,7 @@ MongoClient.connect(url, function (err, db) {
         db.close();
     });*/
     var obj = JSON.parse(fs.readFileSync('../jsonPrueba/thriller.json', 'utf8'));
-        insertDocuments(db, obj, function () {
+    insertDocuments(db, obj, function () {
         db.close();
     });
 

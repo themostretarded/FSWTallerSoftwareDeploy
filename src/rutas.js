@@ -29,54 +29,46 @@ var Misterio = mongoose.model('GenMystery', laspeliculas, 'GenMystery');
 var Thriller = mongoose.model('GenThriller', laspeliculas, 'GenThriller');
 
 rutas.route('/AccionturboHD4K').get(function (req, res) {
-	Accion.find({}, function (err, Accion) {
-		if (err) return console.error(err);
-		res.json(Accion);
-		console.log(Accion);
-	})
+  Accion.find({}, function (err, Accion) {
+    if (err) return console.error(err);
+    res.json(Accion);
+  })
 })
 
 rutas.route('/Misemestre').get(function (req, res) {
-	Comedia.find({}, function (err, Comedia) {
-		if (err) return console.error(err);
-		res.json(Comedia);
-		console.log(Comedia);
-	})
+  Comedia.find({}, function (err, Comedia) {
+    if (err) return console.error(err);
+    res.json(Comedia);
+  })
 })
 
 rutas.route('/Drama').get(function (req, res) {
-	Drama.find({}, function (err, Drama) {
-		if (err) return console.error(err);
-		res.json(Drama);
-		console.log(Drama);
-	})
+  Drama.find({}, function (err, Drama) {
+    if (err) return console.error(err);
+    res.json(Drama);
+  })
 })
 
 rutas.route('/Ceroenkardex').get(function (req, res) {
-	Horror.find({}, function (err, Horror) {
-		if (err) return console.error(err);
-		res.json(Horror);
-		console.log(Horror);
-	})
+  Horror.find({}, function (err, Horror) {
+    if (err) return console.error(err);
+    res.json(Horror);
+  })
 })
 
 rutas.route('/Aunnosubencalificacion').get(function (req, res) {
-	Misterio.find({}, function (err, Misterio) {
-		if (err) return console.error(err);
-		res.json(Misterio);
-		console.log(Misterio);
-	})
+  Misterio.find({}, function (err, Misterio) {
+    if (err) return console.error(err);
+    res.json(Misterio);
+  })
 })
 
 rutas.route('/69enkardex').get(function (req, res) {
-	Thriller.find({}, function (err, Thriller) {
-		if (err) return console.error(err);
-		res.json(Thriller);
-		console.log(Thriller);
-	})
+  Thriller.find({}, function (err, Thriller) {
+    if (err) return console.error(err);
+    res.json(Thriller);
+  })
 })
-
-
 
 rutas.route('/vamanas').get(function (req, res) {
   res.send('ando pedo');
